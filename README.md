@@ -109,6 +109,8 @@ any assumed relationship between repayment status and bills/payments. It is a sl
 | Decision tree | one-hot, keep NaN | 0.373 | 0.012 |
 | Random forest | ordinal, impute | 0.412 | 0.013 |
 
+**Trivial reference points (no model; notebook Section 5):** predicting "no default" for everyone gives accuracy 0.779 but F1 = 0; predicting "default" for everyone gives F1 **0.362** (precision 0.221, recall 1.0). 0.362 is therefore the floor a useful model must clearly beat, and Naive Bayes (0.384) is barely above it.
+
 ### Table A: tuned models and the final comparison
 
 ![comparison](figures/07_validation_performance.png)

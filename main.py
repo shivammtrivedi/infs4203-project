@@ -6,7 +6,8 @@ Run from the submission root, with development.csv and test.csv in the same fold
 It (1) reports the 5-fold stratified cross-validation metrics of the final pipeline on development.csv,
 (2) refits the same pipeline on all of development.csv, (3) predicts test.csv in its original row order and
 (4) writes s4802160.infs4203 (6,000 'yes,'/'no,' rows + one metrics row).
-All exploration, comparison and tuning that led to these choices is in development.ipynb.
+All exploration, comparison and tuning that led to these choices is in development.ipynb: the forest's
+hyperparameters come from the GridSearchCV in Sections 6 and 6.1, and the per-client imputation from Section 6.2.
 """
 import os
 

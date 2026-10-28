@@ -54,7 +54,7 @@ The biggest finding was not in those grids. Without class weighting every model 
 
 *Show: figure 07 (validation performance chart) and Table A.*
 
-"Here are all the approaches on held-out folds, mean and standard deviation over five folds.
+"Here are all the approaches on held-out folds, mean and standard deviation over five folds. For context, a model that just predicts 'default' for everybody already scores F1 0.362, and predicting 'no default' for everybody scores zero, so 0.362 is the floor to beat.
 
 - **Naive Bayes** is worst, F1 0.384. It labels 88% of clients as defaulters, because the correlated bills break its independence assumption and the skew breaks its normality assumption.
 - **k-NN** reaches 0.407. It's precise but finds only 30% of defaulters.
